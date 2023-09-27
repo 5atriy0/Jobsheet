@@ -8,6 +8,5 @@ public class PemilihanPercobaan126 {
         int angka = input26.nextInt();
         String hasil = (angka % 2 == 0) ? "genap" : "ganjil";
         System.out.println("Angka " + angka + " bilangan " + hasil);
-        //tes
     }
 }
