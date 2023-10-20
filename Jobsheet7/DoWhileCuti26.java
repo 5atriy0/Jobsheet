@@ -1,6 +1,9 @@
 import java.util.Scanner;
 public class DoWhileCuti26 {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner input26 = new Scanner(System.in);
         int jatahCuti, jumlahHari;
@@ -13,7 +16,7 @@ public class DoWhileCuti26 {
             System.out.print("Apakah Anda ingin mengambil cuti (y/t)? ");
             konfirmasi = input26.next();
 
-            if (konfirmasi.equalsIgnoreCase("y"));
+            if (konfirmasi.equalsIgnoreCase("y")) {
                 System.out.print("Jumlah hari: ");
                 jumlahHari = input26.nextInt();
 
@@ -24,6 +27,11 @@ public class DoWhileCuti26 {
                     System.out.println("Sisa jatah cuti Anda tidak mencukupi");
                     break;
                 }
-            } while (jatahCuti > 0);
-        }
+            }else if (konfirmasi.equalsIgnoreCase("t")) {
+                System.out.println("Terima kasih telah menggunakan program ini");
+                break;
+            }
+        } while (jatahCuti > 0);
     }
+}
+
