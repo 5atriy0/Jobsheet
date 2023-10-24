@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class DoWhileCuti26 {
-    
+
     public static void main(String[] args) {
         Scanner input26 = new Scanner(System.in);
         int jatahCuti, jumlahHari;
@@ -25,8 +25,6 @@ public class DoWhileCuti26 {
                     break;
                 }
             }else if (konfirmasi.equalsIgnoreCase("t")) {
-                System.out.println("Terima kasih telah menggunakan program ini");
-                break;
             }
         } while (jatahCuti > 0);
     }
