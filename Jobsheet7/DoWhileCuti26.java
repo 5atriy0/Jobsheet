@@ -1,9 +1,6 @@
 import java.util.Scanner;
 public class DoWhileCuti26 {
-
-    /**
-     * @param args
-     */
+    
     public static void main(String[] args) {
         Scanner input26 = new Scanner(System.in);
         int jatahCuti, jumlahHari;
