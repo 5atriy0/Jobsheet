@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WhileKelipatan26 {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner(System.in);
         int kelipatan, total = 0, counter = 0;
 
         System.out.println("Masukkan bilangan kelipatan (1-9): ");
