@@ -1,6 +1,5 @@
 import java.util.Random;
 import java.util.Scanner;
-
 /**
  * Quiz
  */
@@ -21,6 +20,12 @@ public class Quiz {
             } while (!success);
             System.out.print("Apakah Anda ingin mengulang permainan (Y/y)?");
             menu = scan.nextLine().charAt(0);
+            
+            if (menu == 'n' || menu == 'n') {
+                System.out.println("Keluar dari permainan");
+                break;
+            }
+
         } while (menu == 'y' || menu == 'Y');
     }
 }
