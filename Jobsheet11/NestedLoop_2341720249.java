@@ -7,7 +7,8 @@ public class NestedLoop_2341720249 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double[][] temps = new double[5][7];
+        double temps [][] = new double[5][7];
+        double total = 0;
 
         for (int i = 0; i < temps.length; i++) {
             System.out.println("Kota ke-" + i);
@@ -19,10 +20,13 @@ public class NestedLoop_2341720249 {
         }
         for (int i = 0; i < temps.length; i++) {
             System.out.print("Kota ke-" + (i + 1) + ": ");
-            for (int j = 0; j < temps.length; j++) {
-                System.out.print(temps[i][j] + " ");
+            for (double j : temps [i]) {
+                System.out.print(j + " ");
+                total += j;
             }
             System.out.println();
+            double rata2 = total / temps [i].length;
+            System.out.println("Rata-rata suhu : " + rata2);
         }
     }
 }
