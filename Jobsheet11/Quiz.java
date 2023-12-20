@@ -18,9 +18,9 @@ public class Quiz {
                 scan.nextLine();
                 success = (answer == number);
             } while (!success);
-            System.out.print("Apakah Anda ingin mengulang permainan (Y/y)?");
+            System.out.print("Apakah Anda ingin mengulang permainan (y/n)?");
             menu = scan.nextLine().charAt(0);
-            
+
             if (menu == 'n' || menu == 'n') {
                 System.out.println("Keluar dari permainan");
                 break;
